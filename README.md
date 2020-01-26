@@ -39,7 +39,8 @@ The MountainCar environment has two space states, which represent the position a
 | 0      | position | -1.2 | 0.6 |
 | 1     | velocity      |   -0.07 |0.07 |
 
-The actions that can be taken by the agent are:
+The actions that can be taken by the agent are
+
 | Num  | Action |
 | ---- | ----- |
 | 0 | Push Left |
@@ -49,7 +50,8 @@ The actions that can be taken by the agent are:
 Reward Structure
 The default reward structure is -1 for each time step until the goal position of 0.5 is reached. However this requires the agent to run many episodes before it reaches an otpimal policy. So to speed things up I changed the reward structure in the following way.
 
-![mountain_reward.jpg]
+![](Media/mountain_reward.jpg)
+*Image Caption*
 For every time step the cart get a reward of -1 as before. Additionally, the cart gets a reward of
 - +10 beyond blue line
 - +30 beyond green line
@@ -67,7 +69,7 @@ Save the model_test.py file and the .h5 file you want to test in the same folder
 2) Step 2:
 Open a shell in that folder and run
 `python model_test.py <MODEL_NAME.h5> <NUMBER_OF_EPISODES>`
-example:
+For Example:
 `python model_test.py DDQN+PER.h5 30`
 
 
@@ -91,15 +93,23 @@ While training the networks, I havent let the agents run for long periods of tim
 ## Observations and Shortcomings
 DDQN+PER are no doubt are a superior alternative than vanilla DQN, and this could also be seen in the results. However, if you were to run the trained models on the environments, this is what one would see.
 
-This is vanilla DQN:
-![](DQN.gif)
-episode reward = 437
 
-This is Double Deep Q Learning along with Prioritized Experience Replay.
-![](DDQN+PER.gif)
-episode reward = 648
+
+<p>
+  <img src="/Media/DQN.gif" alt="Vanilla DQN" style="width:70%">
+  <em>Vanilla DQN. Episode Reward = 437</em>
+</p>
+
+
+<p>
+  <img src="/Media/DDQN+PER.gif" alt="DDQN + PER" style="width:70%">
+  <em>Double Deep Q Learning along with Prioritized Experience Replay. Episode Reward = 648</em>
+</p>
+
+
 
 Using DDQN + PER, the cart does not reach the flag at all. If DDQN+ + PER is superior then why does this happen?
 The reason is that since we have modified our reward structure to boost the learning of our agent, in the second case our agent has learnt to stay beyond the green and red line for as long as possible and hence win a bigger reward. 
+
 
 
