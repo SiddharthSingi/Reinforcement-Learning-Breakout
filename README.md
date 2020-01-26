@@ -2,16 +2,15 @@
 Using the OpenAI gym to train an RL agent to play MountainCar.
 
 
-- [Reinforcement Learning on OpenAI gym](#reinforcement-learning-on-openai-gym)
-  * [Table of contents](#table-of-contents)
-  * [Project Aim](#project-aim)
-  * [Libraries Used](#libraries-used)
-  * [About the Environment](#about-the-environment)
-  * [Running the code](#running-the-code)
-      - [Testing the models](#testing-the-models)
-      - [Training the models](#training-the-models)
-  * [Results](#results)
-  * [Observations and Shortcomings](#observations-and-shortcomings)
+### **[Table of Contents](#table-of-contents)**
+   * [Project Aim](#project-aim)
+   * [Libraries Used](#libraries-used)
+   * [About the Environment](#about-the-environment)
+   * [Running the code](#running-the-code)
+       - [Testing the models](#testing-the-models)
+       - [Training the models](#training-the-models)
+   * [Results](#results)
+   * [Observations and Shortcomings](#observations-and-shortcomings)
 
 ## Project Aim
 The aim of the project is to demonstrate the use of reinforcement learning and compare its algorithms on the MountainCar environment. The agent must learn to climb to the top of the flag and gain maximum reward. I have written code and compared 4 different variations of reinforcement learning.
