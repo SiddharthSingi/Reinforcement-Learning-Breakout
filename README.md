@@ -2,7 +2,7 @@
 Using the OpenAI gym to train an RL agent to play MountainCar.
 
 
-### **[Table of Contents](#table-of-contents)**
+### **Table of Contents**
    * [Project Aim](#project-aim)
    * [Libraries Used](#libraries-used)
    * [About the Environment](#about-the-environment)
