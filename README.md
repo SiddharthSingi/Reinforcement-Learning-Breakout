@@ -18,6 +18,9 @@ The techniques used in this project are:
 * Fixed Targets Networks
 
 
+![](DQN.gif)
+
+
 
 
 
