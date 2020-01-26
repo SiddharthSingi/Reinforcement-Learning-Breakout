@@ -88,7 +88,28 @@ There are 4 variants of the algorithms that can be run, they all utilize Experie
 
 While training the networks, I havent let the agents run for long periods of time which is why the advantages of one algorithm over the other are rather subtle. I have made provisions to plot episode length, epsilon decay, max reward, average reward and minimum reward. Here I have plotted the results of the 4 different variations. The keras models for each of these are present in the Results folder
 
+<p>
+  <img src="/Results/DQN/DQN.jpg" alt="DQN" style="width:70%">
+  <em>Vanilla Deep Q Learning</em>
+</p>
 
+
+<p>
+  <img src="/Results/DQQN/DDQN.jpg" alt="DDQN" style="width:70%">
+  <em>Double Deep Q Learning</em>
+</p>
+
+
+<p>
+  <img src="/Results/DQN+PER/DQN+PER.jpg" alt="DQN+PER" style="width:70%">
+  <em>Deep Q Learning + PER</em>
+</p>
+
+
+<p>
+  <img src="/Results/DDQN+PER/DDQN+PER.jpg" alt="DDQN+PER" style="width:70%">
+  <em>Double Deep Q Learning + PER</em>
+</p>
 
 ## Observations and Shortcomings
 DDQN+PER are no doubt are a superior alternative than vanilla DQN, and this could also be seen in the results. However, if you were to run the trained models on the environments, this is what one would see.
